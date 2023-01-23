@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container    {
+            margin : orange;
+            text-align: center;
+            border: 1px solid orange
+        }
+        input {
+            font-size: 25px;
+            color:black;
+            width:1000px;
+        }
+        h1{
+            color: orange;
+        }
+        button{
+            width: 1000px;
+            background-color: orange;
+            color:white
+            
+        }
+        
+
+      label{
+            font-weight: bold;
+            /* text-align: left; */
+            /* float: left; */
+            
+        }   
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" onsubmit="osubmit(event)">
+            <h1>Book a call</h1>
+            <h3>Book a call and our representative call you at selected time</h3>
+            <hr>
+            <label for="username" >Name:</label>
+            <br/>
+            <input type="text" name="username" id="username" required/>
+            <br/>
+            <label for="email">Email:</label>
+            <br/>
+            <input type="email" name="email" id="email" required/>
+            <br/>
+            <label for="phone">Phone:</label>
+            <br/>
+            <input type="text" name="phone" id="phone"required/>
+            <br/>
+            <label for="date">Time for Call:</label>
+            <br/>
+            <input type="date" name="date" id="date" style="width: 500px;" required/>
+            <select id = "time" name="time" style="width: 500px;">
+                <option value="1">1.00</option>
+                <option value="2">2.00</option>
+                <option value="3">3.00</option>
+                <option value="4">4.00</option>
+            </select>
+            <br/>
+            <br/>
+            <button>Get a Call</button>
+        </form>
+
+    </div>
+    
+    <script src="index.js">
+        
+    </script>
+</body>
+</html>
